@@ -12,33 +12,38 @@
       margin: 0;
       padding: 0;
       color: white;
-      text-align: center;
       background: url('cartographer.png') no-repeat center center fixed;
       background-size: cover;
     }
+    header {
+      position: absolute;
+      top: 30px;   /* push down a little from the very top */
+      left: 30px;  /* push right a little from the edge */
+      text-align: left;
+    }
     h1 {
-      font-size: 3em;
-      margin-top: 15%;
-      font-weight: 700; /* bold for your name */
+      font-size: 4em;   /* larger */
+      font-weight: 700;
       color: #2c788c;
+      margin: 0;
     }
     h2 {
-      font-size: 1.5em;
-      font-weight: 300; /* light */
-      color: white;
-      margin-bottom: 20px;
+      font-size: 2em;
+      font-weight: 700;
+      color: #2c788c;
+      margin: 0;
     }
     .content {
       max-width: 700px;
-      margin: 0 auto;
+      margin: 200px auto 0 auto; /* ~3 "enters" worth of space from top */
       padding: 0 20px;
-      text-align: justify; /* justify only for content area */
+      text-align: justify;
     }
     p {
       font-size: 1.2em;
       margin: 10px 0;
       line-height: 1.6;
-      font-weight: 300; /* light */
+      font-weight: 300;
       color: white;
     }
     a {
@@ -53,8 +58,11 @@
   </style>
 </head>
 <body>
-  <h1>JEWOO KANG</h1>
-  <h2>PORTFOLIO</h2>
+  <header>
+    <h1>JEWOO KANG</h1>
+    <h2>PORTFOLIO</h2>
+  </header>
+
   <div class="content">
     <p>I’m a writer and translator living in <b>Korea (Seoul, Mapo)</b> and the <b>Philippines (Manila)</b>.</p>
     <p>I also work as a teacher, teaching <b>literature in higher education</b> and <b>English in the academy and cram-school settings</b>.</p>
