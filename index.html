@@ -13,10 +13,9 @@
       padding: 0;
       background: url('cartographer.png') no-repeat center center fixed;
       background-size: cover;
-      color: white;
     }
 
-    /* Header (top-left corner) */
+    /* Header: top-left */
     header {
       position: absolute;
       top: 30px;
@@ -25,7 +24,7 @@
     }
 
     header h1 {
-      font-size: 4.5em; /* larger name */
+      font-size: 4.5em; /* large name */
       font-weight: 700;
       color: #2c788c;
       margin: 0;
@@ -38,7 +37,44 @@
       margin: 0;
     }
 
-    /* Description section */
+    /* Description block */
     .content {
       max-width: 700px;
-      margin: 200px auto 0 auto; /* space from top */
+      margin: 200px auto 0 auto; /* pushes text ~3 enters below header */
+      padding: 0 20px;
+      text-align: justify;
+      color: white;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+
+    .content a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+      color: #2c788c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JEWOO KANG</h1>
+    <h2>PORTFOLIO</h2>
+  </header>
+
+  <div class="content">
+    <p>I’m a writer and translator living in <b>Korea (Seoul, Mapo)</b> and the <b>Philippines (Manila)</b>.</p>
+    <p>I also work as a teacher, teaching <b>literature in higher education</b> and <b>English in the academy and cram-school settings</b>.</p>
+    <p>📧 <a href="mailto:jewoo.kang3@gmail.com">jewoo.kang3@gmail.com</a></p>
+  </div>
+</body>
+</html>
