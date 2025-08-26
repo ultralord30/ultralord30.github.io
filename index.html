@@ -48,29 +48,53 @@
       font-size: 2em;
     }
 
-   .gallery {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  max-width: 600px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
   margin: 30px auto 80px auto;
+  padding: 0 20px;
 }
 
-.gallery a {
+.gallery .thumb {
+  position: relative;
   display: block;
-  aspect-ratio: 1 / 1;   /* keeps perfect squares */
+  aspect-ratio: 1 / 1;   /* perfect squares */
   overflow: hidden;
-  border-radius: 0;      /* sharp corners */
-  border: none;          /* no border */
 }
-
 
 .gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* crops nicely inside the square */
+  object-fit: cover;
   display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.gallery .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery .thumb:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);   /* darkens image */
+}
+
+.gallery .thumb:hover .title {
+  opacity: 1;   /* title fades in */
+}
+
 
   </style>
 </head>
@@ -89,20 +113,26 @@
 
   <h3>My Works</h3>
 <div class="gallery">
-  <a href="works/work1.html">
-    <img src="cover/fa1.jpg" alt="Fly Arirang 1">
+  <a href="works/work1.html" class="thumb">
+    <img src="cover/fa1.jpeg" alt="Fly Arirang 1">
+    <span class="title">Fly Arirang 1</span>
   </a>
-  <a href="works/work2.html">
-    <img src="cover/FM.jpg" alt="Frog Man">
+
+  <a href="works/work2.html" class="thumb">
+    <img src="cover/FM.jpeg" alt="Frog Man">
+    <span class="title">Work 2</span>
   </a>
-  <a href="works/work3.html">
-    <img src="cover/CM.jpg" alt="Crying Men">
+
+  <a href="works/work3.html" class="thumb">
+    <img src="cover/CM.jpeg" alt="Crying Men">
+    <span class="title">Work 3</span>
   </a>
-  <a href="works/work4.html">
-    <img src="cover/LaFM.jpg" alt="Lost and Found Market">
+
+  <a href="works/work4.html" class="thumb">
+    <img src="cover/LaFM.jpeg" alt="Lost and Found Market">
+    <span class="title">Work 4</span>
   </a>
 </div>
-
 
     
     <p>📧 <a href="mailto:jewoo.kang3@gmail.com">jewoo.kang3@gmail.com</a></p>
