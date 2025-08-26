@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crying Men – Jewoo Kang</title>
+  <style>
+    body {
+      font-family: 'Source Serif Pro', serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.7;
+      color: #fff; /* text white */
+      background: url("../cartographer.png") repeat; /* same pattern background */
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c788c;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #ddd;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .story-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px; /* optional rounded corners */
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #2c788c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crying Men</h1>
+  <h2>By Jewoo Kang</h2>
+
+  <!-- Centered image -->
+  <img src="../Crying Men.jpg" alt="Crying Men" class="story-image">
+
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
+<p>ABCDEFGHI</p>
