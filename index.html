@@ -48,34 +48,28 @@
       font-size: 2em;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 800px;
-      margin: 30px auto 80px auto;
-      padding: 0 20px;
-    }
+   .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto 80px auto;
+}
 
-    .gallery a {
-      display: block;
-      aspect-ratio: 1 / 1;       /* perfect squares */
-      overflow: hidden;
-      border-radius: 10px;
-      border: 2px solid #2c788c;
-    }
+.gallery a {
+  aspect-ratio: 1 / 1;   /* keeps square shape */
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #2c788c;
+}
 
-    .gallery img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;          /* fills square */
-      transition: transform 0.3s ease;
-    }
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* crops nicely inside the square */
+  display: block;
+}
 
-    .gallery img:hover {
-      transform: scale(1.05);     /* zoom on hover */
-    }
-    /* === END: Gallery === */
   </style>
 </head>
 <body>
