@@ -48,52 +48,54 @@
       font-size: 2em;
     }
 
+/* === GALLERY WITH HOVER TITLES === */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 600px;
   margin: 30px auto 80px auto;
-  padding: 0 20px;
 }
 
 .gallery .thumb {
   position: relative;
   display: block;
-  aspect-ratio: 1 / 1;   /* perfect squares */
+  aspect-ratio: 1 / 1;   /* keeps perfect squares */
   overflow: hidden;
+  border-radius: 0;      /* sharp corners */
+  border: none;
 }
 
 .gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;   /* crops nicely inside the square */
   display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .gallery .title {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  inset: 0;   /* fills the whole square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
   color: white;
-  font-size: 1.1em;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.6);   /* transparent dark overlay */
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .gallery .thumb:hover img {
-  transform: scale(1.05);
-  filter: brightness(70%);   /* darkens image */
+  transform: scale(1.05);  /* zoom effect */
 }
 
 .gallery .thumb:hover .title {
-  opacity: 1;   /* title fades in */
+  opacity: 1;  /* fade in text/overlay */
 }
+
 
 
   </style>
@@ -120,17 +122,17 @@
 
   <a href="works/work2.html" class="thumb">
     <img src="cover/FM.jpeg" alt="Frog Man">
-    <span class="title">Work 2</span>
+    <span class="title">Frog Man</span>
   </a>
 
   <a href="works/work3.html" class="thumb">
     <img src="cover/CM.jpeg" alt="Crying Men">
-    <span class="title">Work 3</span>
+    <span class="title">Crying Men</span>
   </a>
 
   <a href="works/work4.html" class="thumb">
     <img src="cover/LaFM.jpeg" alt="Lost and Found Market">
-    <span class="title">Work 4</span>
+    <span class="title">Lost and Found Market</span>
   </a>
 </div>
 
