@@ -75,7 +75,30 @@
     <p>Bilingual (Korean/English) writer, editor, and translator with experience developing narrative nonfiction,  guiding emerging voices, and adapting content for diverse audiences. Recognized for excellence in literature and creative writing, with a strong background in workshops, translation, and cross-cultural communication.
 </p>
   
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
 
+.gallery a {
+  display: block;
+  aspect-ratio: 1 / 1; /* keeps images perfectly square */
+  overflow: hidden;
+  border-radius: 10px; /* optional: rounded corners */
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops the image to fit the square */
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
 <h2 style="color:#2c788c; margin-top: 60px;">My Works</h2>
 
 <div class="gallery">
